@@ -131,21 +131,13 @@ export default function App() {
       </button>
 
       {generatedMotion && (
-  <div className="mt-6">
-    <h2 className="text-xl font-bold mb-2">Generated Motion:</h2>
-    <div
-      id="motionContent"
-      className="whitespace-pre-wrap border p-4 rounded bg-gray-50"
-      dangerouslySetInnerHTML={{ __html: generatedMotion }}
-    />
-    <button
-      className="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
-      onClick={() => {
-        const el = document.getElementById('motionContent');
-        html2pdf().set({ filename: 'Motion.pdf' }).from(el).save();
-      }}
-    >
-      Download PDF
-    </button>
-  </div>
-)}
+        <div className="mt-6">
+          <h2 className="text-xl font-bold mb-2">Generated Motion:</h2>
+          <pre className="whitespace-pre-wrap border p-4 rounded bg-gray-50">
+            {generatedMotion}
+          </pre>
+        </div>
+      )}
+    </div>
+  );
+}
