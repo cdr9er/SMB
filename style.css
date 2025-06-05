@@ -1,0 +1,4 @@
+body { font-family: sans-serif; margin: 2rem; }
+textarea, input { width: 100%; margin: 0.5rem 0; padding: 0.5rem; }
+button { background: #2563eb; color: white; padding: 0.5rem 1rem; border-radius: 0.25rem; }
+pre { background: #f9fafb; padding: 1rem; border: 1px solid #ddd; white-space: pre-wrap; }
